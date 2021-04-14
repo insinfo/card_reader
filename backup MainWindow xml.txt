@@ -1,0 +1,6 @@
+  <dragablz:TabablzControl>
+        <dragablz:TabablzControl.InterTabController>
+            <dragablz:InterTabController />
+        </dragablz:TabablzControl.InterTabController>
+
+</dragablz:TabablzControl>

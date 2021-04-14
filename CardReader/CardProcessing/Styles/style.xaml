@@ -1,0 +1,55 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:CardProcessing">
+
+
+    <!-- INICIO DA DEFINIÇÃO DO ESTILO PARA O THUMB DE ROTACIONAR OBJETOS -->
+    <Style x:Key="RotateThumbStyle" TargetType="{x:Type Thumb}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Thumb}">
+                    <Ellipse Stroke="DarkSlateGray" StrokeThickness="0" Width="10" Height="10">
+                        <Ellipse.Fill >
+                            <SolidColorBrush Color="DarkBlue" Opacity="1"></SolidColorBrush>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- INICIO DA DEFINIÇÃO DO ESTILO PARA O THUMB DE MOVER OBJETOS -->
+    <Style x:Key="MoveThumbStyle" TargetType="{x:Type Thumb}">
+        <Setter Property="Cursor" Value="ScrollAll"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Thumb}">
+                    <Rectangle Stroke="DarkSlateGray" StrokeThickness="0">
+
+                        <Rectangle.Fill >
+                            <SolidColorBrush Color="DarkBlue" Opacity="0.1"></SolidColorBrush>
+                        </Rectangle.Fill> 
+
+                    </Rectangle>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- INICIO DA DEFINIÇÃO DO ESTILO PARA O THUMB DE SCALAR OBJETOS -->
+    <Style x:Key="ResiseThumbStyle" TargetType="{x:Type Thumb}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Thumb}">
+                    <Rectangle Stroke="DarkSlateGray" StrokeThickness="0">
+                        <Rectangle.Fill >
+                            <SolidColorBrush Color="DarkBlue" Opacity="0.9"></SolidColorBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>
